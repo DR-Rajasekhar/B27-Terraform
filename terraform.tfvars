@@ -1,3 +1,3 @@
-imagename     = "ami-0fb653ca2d3203ac1"
+imagename     = "ami-053b0d53c279acc90"
 instance_type = "t2.micro"
-key           = "DevServer"
+key           = "ofcDesktop"
