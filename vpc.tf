@@ -1,4 +1,4 @@
-resource "aws_vpc" "testvpc1" {
+resource "aws_vpc" "testvpc01" {
   cidr_block           = "10.1.0.0/16"
   enable_dns_hostnames = true
   tags = {
@@ -7,7 +7,7 @@ resource "aws_vpc" "testvpc1" {
     environment = "dev"
   }
 }
-resource "aws_vpc" "testvpc2" {
+resource "aws_vpc" "testvpc02" {
   cidr_block           = "10.2.0.0/16"
   enable_dns_hostnames = true
   tags = {
@@ -16,7 +16,7 @@ resource "aws_vpc" "testvpc2" {
     environment = "dev"
   }
 }
-resource "aws_vpc" "testvpc3" {
+resource "aws_vpc" "testvpc03" {
   cidr_block           = "10.3.0.0/16"
   enable_dns_hostnames = true
   tags = {
@@ -25,7 +25,7 @@ resource "aws_vpc" "testvpc3" {
     environment = "dev"
   }
 }
-resource "aws_vpc" "testvpc4" {
+resource "aws_vpc" "testvpc04" {
   cidr_block           = "10.4.0.0/16"
   enable_dns_hostnames = true
   tags = {
