@@ -4,6 +4,6 @@ resource "aws_flow_log" "devopsb27flowlogs" {
   traffic_type         = "ALL"
   vpc_id               = aws_vpc.testvpc01.id
   tags = {
-    Name = "${var.vpc_name}-flow-logs"
+    Name = "terraform_testvpc_1-flow-logs"
   }
 }
