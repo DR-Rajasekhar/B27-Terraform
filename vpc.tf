@@ -2,7 +2,7 @@ resource "aws_vpc" "testvpc01" {
   cidr_block           = var.cidr_block
   enable_dns_hostnames = true
   tags = {
-    Name        = "terraform_testvpc_1"
+    Name        = var.vpc_name
     Owner       = "Rajasekhar"
     environment = var.env
   }
@@ -13,6 +13,6 @@ resource "aws_vpc" "testvpc01" {
 resource "aws_internet_gateway" "default" {
   vpc_id = aws_vpc.testvpc01.id
   tags = {
-    Name = "${var.IGW_name}"
+    Name = "${var.vpc_name}-IGW"
   }
 }

@@ -1,15 +1,7 @@
-variable "cidr_block" {
-  type        = string
-  default     = "10.1.0.0/16"
-  description = "CIDR block for VPC"
-}
-variable "env" {
-  type        = string
-  default     = "development"
-  description = "environment tag  for VPC"
-}
-variable "IGW_name" {
-  type        = string
-  default     = "default-igw"
-  description = "environment tag  for VPC"
-}
+variable "vpc_name" {}
+variable "cidr_block" {}
+variable "env" {}
+variable "public_subnet1_cidr" {}
+variable "public_subnet2_cidr" {}
+variable "public_subnet3_cidr" {}
+variable "imagename" {}

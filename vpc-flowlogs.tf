@@ -6,4 +6,7 @@ resource "aws_flow_log" "devopsb27flowlogs" {
   tags = {
     Name = "terraform_testvpc_1-flow-logs"
   }
+  lifecycle {
+    create_before_destroy = true
+  }
 }
